@@ -1,25 +1,25 @@
-# 🏍️ AlugaMe - Aplicativo de Locação de Motos
+# 💻 SoftwareBuy - Plataforma de Venda de Softwares
 
-> Um protótipo de aplicativo mobile para uma locadora de motocicletas, desenvolvido em Flutter como parte de um projeto acadêmico.
+> Um protótipo de aplicativo mobile para um marketplace de sistemas empresariais (B2B), desenvolvido em Flutter.
 
 ## 📋 Sobre o Projeto
 
-`AlugaMe` é um aplicativo mobile que simula as principais funcionalidades de um serviço de locação de veículos, com foco em motocicletas. O projeto foi desenvolvido para cumprir os requisitos da disciplina de [Programação para Dispositivos Móveis], demonstrando a aplicação de conceitos de desenvolvimento mobile utilizando o framework Flutter.
+O `SoftwareBuy` é um aplicativo mobile que simula as principais funcionalidades de um marketplace focado em sistemas empresariais. O projeto foi desenvolvido para cumprir os requisitos da disciplina de **Governança de TI e Gestão de Projetos**, demonstrando a aplicação de conceitos de desenvolvimento mobile, componentização e arquitetura de app.
 
-O app permite que os usuários se cadastrem, façam login, visualizem o catálogo de motos disponíveis, gerenciem suas reservas e configurem seu perfil.
+O app permite que os usuários (empresas) se cadastrem, façam login, visualizem o catálogo de softwares disponíveis, gerenciem suas licenças adquiridas e configurem sua conta.
 
 ---
 
 ## ✨ Funcionalidades Principais
 
-- **Autenticação de Usuário:** Telas completas de Login e Cadastro com validação de formulário.
-- **Navegação Principal:** Uso de `BottomNavigationBar` para uma navegação fluida entre as seções principais.
-- **Catálogo de Veículos:** Tela de listagem com todas as motos disponíveis para locação, exibindo detalhes como modelo, preço e imagem.
-- **Gerenciamento de Reservas:** Área para o usuário visualizar as motos que já foram reservadas.
-- **Perfil e Configurações:** Uma área centralizada para o usuário:
-  - Editar suas informações pessoais (nome, CNH, telefone).
-  - Acessar a tela de cadastro de novos veículos (simulando uma visão de administrador).
-  - Visualizar as unidades da locadora em um mapa estático.
+- **Autenticação de Usuário:** Telas completas de Login e Cadastro com validação de formulário (utilizando widgets customizados).
+- **Navegação Principal:** Uso de `BottomNavigationBar` para uma navegação fluida entre as seções principais ("Catálogo", "Minhas Licenças", "Minha Conta").
+- **Catálogo de Softwares:** Tela de listagem com todos os softwares disponíveis para compra, exibindo categoria, preço e logo (utilizando um widget `SoftwareCard` customizado).
+- **Gerenciamento de Licenças:** Área para o usuário visualizar os softwares que sua empresa já adquiriu.
+- **Minha Conta (Configurações):** Uma área centralizada para o usuário:
+  - Editar suas informações de perfil/empresa.
+  - Acessar a tela de cadastro de novos softwares (simulando uma visão de administrador).
+  - Visualizar as telas de "Sobre a Equipe" e "Sobre o App".
   - Realizar o logout de forma segura.
 
 ---
@@ -48,12 +48,12 @@ Para rodar este projeto localmente, siga os passos abaixo.
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/](https://github.com/GuilhermeD9/flutter-app-e01.git
+   git clone [COLE O LINK DO SEU NOVO REPOSITÓRIO AQUI]
    ```
 
 2. **Acesse a pasta do projeto:**
    ```bash
-   cd flutter-app-e01
+   cd [NOME-DA-PASTA-DO-SEU-PROJETO]
    ```
 
 3. **Instale as dependências:**
@@ -75,11 +75,12 @@ O projeto foi organizado com uma estrutura de pastas clara para facilitar a manu
 ```
 lib/
 ├── main.dart         # Ponto de entrada da aplicação e configuração das rotas
-├── models/           # Classes de modelo (Moto, Usuario, etc.)
+├── models/           # Classes de modelo (Software, Usuario, MembroEquipe, etc.)
 ├── screens/          # Widgets que representam cada tela do app
 │   ├── login_screen.dart
 │   ├── home_screen.dart
 │   └── ...
+└── widgets/          # Widgets reutilizáveis (SoftwareCard, CustomTextFormField, etc.)
 ```
 
 ---
@@ -90,8 +91,6 @@ Desenvolvido pelos amigos:
 **[Guilherme Silva](https://github.com/GuilhermeD9)**,
 **[Marcos Guilherme](https://github.com/MGuilherme22)**,
 **[Antony Rafael](https://github.com/rafaelsouzapinto)**,
-
-
 ---
 
 ## 📄 Licença
