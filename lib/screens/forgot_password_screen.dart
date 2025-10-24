@@ -25,7 +25,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               children: [
 
                 const Text(
-                  'AlugueME',
+                  'SoftwareBuy',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 42,
@@ -35,7 +35,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 const SizedBox(height: 20),
 
                 Image.asset(
-                  'assets/images/logo.png',
+                  'assets/images/software_logo_principal.png',
                   height: 150,
                 ),
                 const SizedBox(height: 48),
