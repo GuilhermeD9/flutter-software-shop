@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:memobile/models/membro_equipe_model.dart';
-import 'package:memobile/screens/membro_detalhes_screen.dart';
+import 'package:softwareBuy/models/membro_equipe_model.dart';
+import 'package:softwareBuy/screens/membro_detalhes_screen.dart';
 
 class AboutCrewScreen extends StatelessWidget {
   const AboutCrewScreen({super.key});

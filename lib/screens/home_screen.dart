@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:memobile/models/software_model.dart';
-import 'package:memobile/widgets/software_card.dart';
+import 'package:softwareBuy/models/software_model.dart';
+import 'package:softwareBuy/widgets/software_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +12,12 @@ class HomeScreen extends StatelessWidget {
       categoria: 'Financeiro',
       descricao: 'Software completo para gestão de fluxo de caixa, faturamento e contas a pagar/receber da sua empresa.',
       preco: 299.90,
-      logoUrl: 'assets/images/software_fin.png', //
+      logoUrl: 'assets/images/software_fin.png',
+      fabricante: 'TechCorp Soluções',
+      emailSuporte: 'suporte@techcorp.com',
+      requisitosSistema: 'Windows 10/11, 8GB RAM, 1GB HD',
+      formasPagamento: ['Cartão de Crédito', 'Pix', 'Boleto'],
+      licenseKey: "44222-24412-44165"
     ),
     Software(
       id: '2',
@@ -21,6 +26,11 @@ class HomeScreen extends StatelessWidget {
       descricao: 'Aumente suas vendas com nosso sistema de CRM intuitivo, funil de vendas e automação de marketing.',
       preco: 149.90,
       logoUrl: 'assets/images/software_crm.png',
+      fabricante: 'TechCorp Soluções',
+      emailSuporte: 'suporte@techcorp.com',
+      requisitosSistema: 'Windows 10/11, 8GB RAM, 1GB HD',
+      formasPagamento: ['Cartão de Crédito', 'Pix', 'Boleto'],
+      licenseKey: "44222-24412-44165"
     ),
     Software(
       id: '3',
@@ -29,6 +39,11 @@ class HomeScreen extends StatelessWidget {
       descricao: 'Sistema simples para controle de entrada e saída de mercadorias, inventário e relatórios de estoque.',
       preco: 99.00,
       logoUrl: 'assets/images/software_estoque.png',
+      fabricante: 'Logística Apps',
+      emailSuporte: 'contato@logapps.com',
+      requisitosSistema: 'Windows 10, 4GB RAM, 500MB HD',
+      formasPagamento: ['Boleto', 'Pix'],
+      licenseKey: "44222-24412-44165"
     ),
   ];
 

@@ -5,6 +5,11 @@ class Software {
   final String descricao;
   final double preco;
   final String logoUrl;
+  final String fabricante;
+  final String emailSuporte;
+  final String requisitosSistema;
+  final List<String> formasPagamento;
+  final String licenseKey;
 
   const Software({
   required this.id,
@@ -12,6 +17,11 @@ class Software {
   required this.categoria,
   required this.descricao,
   required this.preco,
-  required this.logoUrl
+  required this.logoUrl,
+  required this.fabricante,
+  required this.emailSuporte,
+  required this.requisitosSistema,
+  required this.formasPagamento,
+  required this.licenseKey
   });
 }

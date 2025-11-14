@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:memobile/screens/my_licenses_screen.dart';
-import 'package:memobile/screens/home_screen.dart';
-import 'package:memobile/screens/my_account_screen.dart';
+import 'package:softwareBuy/screens/home_screen.dart';
+import 'package:softwareBuy/screens/my_account_screen.dart';
+import 'package:softwareBuy/screens/my_licenses_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -19,12 +19,6 @@ class _MainScreenState extends State<MainScreen> {
     MyAccountScreen(),
   ];
 
-  static const List<String> _widgetTitles = <String> [
-    'Catálogo',
-    'Minhas Licenças',
-    'Minha Conta',
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -34,27 +28,29 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: _widgetOptions,
       ),
+
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.apps),
+            icon: Icon(Icons.storefront),
             label: 'Catálogo',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history_toggle_off),
+            icon: Icon(Icons.vpn_key),
             label: 'Minhas Licenças',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
+            icon: Icon(Icons.person),
             label: 'Minha Conta',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.deepPurpleAccent[800],
         onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed,
       ),
     );
   }

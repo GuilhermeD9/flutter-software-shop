@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:memobile/models/membro_equipe_model.dart';
+import 'package:softwareBuy/models/membro_equipe_model.dart';
 
 class MembroDetalhesScreen extends StatelessWidget {
   final MembroEquipe membro;

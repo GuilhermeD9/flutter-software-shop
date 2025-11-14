@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:memobile/widgets/menu_option_tile.dart';
+import 'package:softwareBuy/widgets/menu_option_tile.dart';
 
 class MyAccountScreen extends StatefulWidget {
   const MyAccountScreen({super.key});
@@ -64,17 +64,6 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
             secondary: const Icon(Icons.notifications_outlined),
           ),
           const Divider(),
-
-          SwitchListTile(
-            title: const Text('Modo Escuro'),
-            value: _darkModeEnabled,
-            onChanged: (bool value) {
-              setState(() {
-                _darkModeEnabled = value;
-              });
-            },
-            secondary: const Icon(Icons.dark_mode_outlined),
-          ),
 
           ListTile(
             leading: Icon(Icons.logout, color: Colors.red[700]),

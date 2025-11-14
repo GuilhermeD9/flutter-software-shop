@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:memobile/widgets/custom_text_form_field.dart';
+import 'package:softwareBuy/widgets/custom_text_form_field.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
